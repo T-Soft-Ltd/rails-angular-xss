@@ -1,11 +1,11 @@
 language: ruby
 rvm:
-  - 2.1
-  - 2.2
+  - 2.3
+  - jruby-9.1.2.0
 services:
   - mysql
 script: rake travis:run
 branches:
   only:
     - master
-
+    - dev
