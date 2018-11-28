@@ -1,4 +1,4 @@
-rails-angular-xss [![Build Status](https://travis-ci.org/opf/rails-angular-xss.png?branch=master)](https://travis-ci.org/opf/rails-angular-xss)
+rails-angular-xss [![Build Status](https://travis-ci.org/T-Soft-Ltd/rails-angular-xss.svg?branch=dev)](https://travis-ci.org/T-Soft-Ltd/rails-angular-xss)
 ===========
 
 When rendering AngularJS templates with a server-side templating engine like ERB it is easy to introduce XSS vulnerabilities.
