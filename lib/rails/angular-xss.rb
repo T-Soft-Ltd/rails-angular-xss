@@ -15,7 +15,7 @@ module Rails
   end
 
   redef_without_warning 'HTML_ESCAPE',
-                        ERB::Util::HTML_ESCAPE.merge('{{' => '{{ DOUBLE_LEFT_CURLY_BRACE }}')
+                        ERB::Util::HTML_ESCAPE.merge('{{' => '{{ $root.DOUBLE_LEFT_CURLY_BRACE }}')
 
   redef_without_warning 'HTML_ESCAPE_REGEXP',
                         /[&"'><]|\{\{/,
