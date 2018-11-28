@@ -23,7 +23,7 @@ Installation
 
 1. Put this into your Gemfile
 
-        gem 'angular_xss'
+        gem 'rails-angular-xss'
 
 2. Run `bundle install`.
 
@@ -36,7 +36,7 @@ Installation
 How it works
 ------------
 
-This gem patches ERB.Util HTML_ESCAPE constants to replace *any* occurence of the string `{{` with the replacement ``{{ DOUBLE_LEFT_CURLY_BRACE }}`. This will be interpolated by Angular, **and assuming you've followed step 4. above**, Angular returns the interpolated string `{{`.
+This gem patches ERB.Util HTML_ESCAPE constants to replace *any* occurrence of the string `{{` with the replacement ``{{ DOUBLE_LEFT_CURLY_BRACE }}`. This will be interpolated by Angular, **and assuming you've followed step 4. above**, Angular returns the interpolated string `{{`.
 
 This allows users to actually use `{{` without it being transformed by some invisible spaces, unicode characaters that *look like*  a curly bracket and so on.
 
